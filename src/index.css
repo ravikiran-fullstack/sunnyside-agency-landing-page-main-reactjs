@@ -85,11 +85,15 @@ header ul {
   align-items: center;
 }
 
-.homeTab{
+.homeTab{ 
   margin-right: auto;
   /* font-family: 'Fraunces', serif; */
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.homeTab:hover{
+  background-color: #3EBFFF !important;
 }
 
 .contactsTab{
@@ -134,9 +138,101 @@ header li a:hover {
   margin-top: 5rem;
 }
 
-.services{
+.servicesGrid{
   width: 100vw;
-  height: 100vh;
-  /* border: 1px solid; */
-  background-color: cornsilk;
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:600px 600px 600px;
+}
+
+.card1, .card2, .card3,.card4,.card5,.card6{
+  /* border: 1px dotted red; */
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 7rem;
+  color:var(--dark-grayish-blue)
+}
+
+.cardHeading{
+  margin-bottom: 2rem;
+  padding: 0 1rem 0 0;
+}
+
+.cardHeading h1{
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.cardInfo{
+  margin-bottom: 2.5rem;
+}
+
+.learnMoreLink {
+  position: relative;
+  text-decoration: none;
+  color: #23303e;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  z-index: 100;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.card2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url("./images/desktop/image-transform.jpg");
+}
+
+.card3{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url("./images/desktop/image-stand-out.jpg");
+}
+
+.card4{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.card5{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.card6{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-image: url("./images/desktop/image-photography.jpg");
+}
+
+.card5, .card6{
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem !important;
+}
+
+.cardHeadingGraphic{
+  padding-top: 2rem;
+}
+
+.cardInfoGraphic, .cardInfoPhotography{
+  text-align: center;
+}
+
+.cardHeadingGraphic h1, .cardHeadingPhotography h1{
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 900;
 }
