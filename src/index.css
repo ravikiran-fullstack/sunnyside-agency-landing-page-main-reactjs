@@ -54,6 +54,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #90D4C5; */
 }
 
 .home{
@@ -284,4 +285,60 @@ header li a:hover {
 .userRole{
   font-size: 0.6rem;
   color: var(--grayish-blue);
+}
+
+.projectsSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90D4C5;
+}
+
+/* .project{
+  height: 100px !important;
+  width: 200px;
+} */
+
+.projectPicture{
+  width: 25vw;
+  height: 500px;
+}
+
+footer{
+  color: black;
+  background-color: #90D4C5;
+  padding: 5rem;
+  text-align: center;
+}
+
+.footerHeading{
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--dark-desaturated-cyan);
+}
+
+.footerCategories{
+  margin: 1rem 25%;
+  width: 50%;
+  color: var(--dark-moderate-cyan);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerCategories >div:hover{
+  cursor: pointer;
+  color:var(--white)
+}
+
+.footerSocialMediaIcons{
+  margin: 2rem 30%;
+  width: 40%;
+  color: var(--dark-desaturated-cyan);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footerSocialMediaIcons > i:hover{
+  color: white;
 }

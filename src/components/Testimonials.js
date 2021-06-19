@@ -11,7 +11,7 @@ const Testimonials = () => {
             <div className="testimonialsGrid">
                 {
                     testimonials.map(testimonial => {
-                        return <Testimonial testimonial={testimonial}/>
+                        return <Testimonial key={testimonial.name} testimonial={testimonial}/>
                     })
                 }
             </div>

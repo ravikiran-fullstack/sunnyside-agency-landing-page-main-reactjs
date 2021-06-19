@@ -18,3 +18,22 @@ export const testimonials = [
         picture: "../images/image-jennie.jpg"
     }
 ]
+
+export const projects = [
+    {
+        name: "milkbottles",
+        picture: "../images/image-gallery-milkbottles.jpg"
+    },
+    {
+        name: "orange",
+        picture: "../images/image-gallery-orange.jpg"
+    },
+    {
+        name: "cone",
+        picture: "../images/image-gallery-cone.jpg"
+    },
+    {
+        name: "sugarcubes",
+        picture: "../images/image-gallery-sugarcubes.jpg"
+    },
+]
