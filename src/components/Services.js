@@ -6,7 +6,7 @@ const Services = () => {
             <div className="card1">
                 <div className="cardHeading"><h1>Transform your brand</h1></div>
                 <p className="cardInfo">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                <a href="/" class="learnMoreLink yellow--underline">Learn more</a>
+                <a href="/" className="learnMoreLink yellow--underline">Learn more</a>
             </div>
             <div className="card2">Card 2</div>
             <div className="card3">Card 3</div>
