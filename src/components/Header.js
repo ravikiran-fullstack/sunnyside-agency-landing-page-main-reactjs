@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className="headerDesktop">
       <ul>
-        <li class="homeTab" >  
+        <li className="homeTab" >  
           <a href="#home">
             sunnyside
           </a>
@@ -18,7 +18,7 @@ const Header = () => {
         <li>
           <a href="#projects">Projects</a>
         </li>
-        <li class="contactsTab">
+        <li className="contactsTab">
           <a href="#contacts">Contacts</a>
         </li>
       </ul>

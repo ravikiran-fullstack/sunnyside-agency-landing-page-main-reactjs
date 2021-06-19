@@ -13,10 +13,10 @@ const Footer = () => {
                 
             </div>
             <div className="footerSocialMediaIcons">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest"></i>
+                <i className="fab fa-facebook-square"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-pinterest"></i>
             </div>
         </footer>
     )
