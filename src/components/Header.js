@@ -1,6 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 
 const Header = () => {
+  const [dropDownOpen, setDropDownOpen] = useState(false) 
+
   return (
     <>
       <header className="headerDesktop">
@@ -23,27 +25,17 @@ const Header = () => {
         </ul>
       </header>
       <header className="headerMobile">
-        <ul>
-          <li className="homeTabMobile">
-            <a href="#home">sunnyside</a>
-          </li>
-          <li className="dropdownMenu">
-            <ul>
-              <li>
-                About
-              </li>
-              <li>
-                Services
-              </li>
-              <li>
-                Projects
-              </li>
-              <li>
-                Contacts
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div className="homeTabMobile">
+          <a href="#home">sunnyside</a>
+        </div>
+        <div className="dropdownMenu" onClick={() => setDropDownOpen(!dropDownOpen)}>
+          {dropDownOpen && <div className="dropdownUl">
+            <div className="mobileTab"><a href="#about">About</a></div>
+            <div className="mobileTab"><a href="#services">Services</a></div>
+            <div className="mobileTab"><a href="#projects">Projects</a></div>
+            <div className="mobileTab"><a href="#contacts">Contacts</a></div>
+          </div>}
+        </div>
       </header>
     </>
   );
