@@ -405,7 +405,7 @@ footer {
     width: 2rem;
   }
 
-  .dropdownMenuArrow{
+  /* .dropdownMenuArrow{
     background-color: white;
     display: block;
     position: absolute;
@@ -418,7 +418,7 @@ footer {
     border-left: 12.5px solid transparent;
     border-bottom: 12.5px solid white;
     border-right: 12.5px solid white;
-  }
+  } */
 
   .dropdownUl {
     position: absolute;
