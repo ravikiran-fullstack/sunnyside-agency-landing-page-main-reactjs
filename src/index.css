@@ -97,6 +97,14 @@ header ul {
   border-radius: 25px;
 }
 
+.headerDesktop {
+  display: block;
+}
+
+.headerMobile {
+  display: none;
+}
+
 header li {
   float: left;
   margin-left: 1rem;
@@ -300,25 +308,25 @@ header li a:hover {
   height: 500px;
 }
 
-.project{
+.project {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.project:first-child{
+.project:first-child {
   background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
 }
 
-.project:nth-child(2){
+.project:nth-child(2) {
   background-image: url("./images/desktop/image-gallery-orange.jpg");
 }
 
-.project:nth-child(3){
+.project:nth-child(3) {
   background-image: url("./images/desktop/image-gallery-cone.jpg");
 }
 
-.project:last-child{
+.project:last-child {
   background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
 }
 
@@ -370,6 +378,38 @@ footer {
     display: none !important;
   }
 
+  .headerMobile {
+    display: block !important;
+  }
+
+  .homeTabMobile {
+    font-size: 1rem;
+    margin-right: auto !important;
+    position: relative;
+  }
+
+  .dropdownMenu {
+    z-index: 100 !important;
+    position: relative;
+  }
+
+  .dropdownMenu ul {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    border: 1px solid red;
+    width: 6rem;
+    padding: 0 !important;
+    overflow: scroll;
+    align-items: unset !important;
+    margin-top: 6rem;
+  }
+
+  .dropdownMenu ul li:hover {
+    background-color: beige;
+    color: black;
+  }
+
   .home {
     width: 100vw !important;
     height: 84vh !important;
@@ -381,7 +421,7 @@ footer {
   }
 
   .homeTitle {
-    padding-top: 8rem;
+    padding-top: 3rem;
     text-align: center;
   }
 
@@ -458,7 +498,7 @@ footer {
     text-align: center;
   }
 
-  .card1 h1{
+  .card1 h1 {
     font-size: 1.75rem !important;
   }
 
@@ -473,7 +513,7 @@ footer {
     background-color: #90d4c5;
   }
 
-  .projectPicture{
+  .projectPicture {
     width: 50vw !important;
   }
 
@@ -483,19 +523,19 @@ footer {
     grid-template-rows: auto auto auto !important;
   }
 
-  .testimonialsSection{
+  .testimonialsSection {
     padding: 4rem 3rem !important;
   }
 
-  .testimonialsSectionHeading h3{
+  .testimonialsSectionHeading h3 {
     font-size: 1rem !important;
   }
 
-  .testimonial{
+  .testimonial {
     margin-bottom: 3rem !important;
   }
 
-  .testimonial:last-child{
+  .testimonial:last-child {
     margin-bottom: 0rem !important;
   }
 
@@ -504,36 +544,36 @@ footer {
     grid-template-rows: 300px 300px !important;
     grid-template-columns: 1fr 1fr !important;
   }
-  
+
   .projectPicture {
     width: 25vw;
     height: 500px;
   }
-  
-  .project{
+
+  .project {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-  
-  .project:first-child{
+
+  .project:first-child {
     background-image: url("./images/mobile/image-gallery-milkbottles.jpg") !important;
   }
-  
-  .project:nth-child(2){
+
+  .project:nth-child(2) {
     background-image: url("./images/mobile/image-gallery-orange.jpg") !important;
   }
-  
-  .project:nth-child(3){
+
+  .project:nth-child(3) {
     background-image: url("./images/mobile/image-gallery-cone.jpg") !important;
   }
-  
-  .project:last-child{
+
+  .project:last-child {
     background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg") !important;
   }
 
-  footer{
-    padding: 1rem !important; 
+  footer {
+    padding: 1rem !important;
   }
 
   .footerCategories {
@@ -546,4 +586,3 @@ footer {
     margin: 4rem 30% 0 30% !important;
   }
 }
-
