@@ -1,8 +1,10 @@
-import React,{useState} from "react";
+import React,{useState, useRef} from "react";
 
 const Header = () => {
   const [dropDownOpen, setDropDownOpen] = useState(false) 
+  const dropDownRef = useRef(null);
 
+  // old way of dropdown menu
   return (
     <>
       <header className="headerDesktop">
@@ -28,7 +30,7 @@ const Header = () => {
         <div className="homeTabMobile">
           <a href="#home">sunnyside</a>
         </div>
-        <div className="dropdownMenu" onClick={() => setDropDownOpen(!dropDownOpen)}>
+        <div className="dropdownMenu" onClick={() => setDropDownOpen(!dropDownOpen)} ref={dropDownRef}>
           {dropDownOpen && <div className="dropdownUl">
             <div className="mobileTab"><a href="#about">About</a></div>
             <div className="mobileTab"><a href="#services">Services</a></div>
