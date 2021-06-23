@@ -21,7 +21,6 @@ const Header = () => {
   }, [isActive]);
 
   const onClick = (e) => {
-    console.log(e.target, isActive);
     setIsActive(!isActive)
   };
 
