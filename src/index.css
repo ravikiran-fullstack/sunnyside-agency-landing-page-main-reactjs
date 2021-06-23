@@ -441,6 +441,13 @@ footer {
     position: relative;
   }
 
+  /* menu::before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background: red;
+  } */
+
   .menu {
     background: #ffffff;
     border-radius: 8px;
@@ -485,6 +492,18 @@ footer {
     width: 2rem;
     border: none;
     cursor: pointer;
+  } */
+
+  /* .menu::before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    border-top-left-radius: 200px;
+    background: white;
+    position: absolute;
+    top: 2rem;
+    left: 0px;
+    z-index: 100;
   } */
 
   .menu-trigger {
