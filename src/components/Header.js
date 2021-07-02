@@ -1,4 +1,4 @@
-import React,{useState, useRef, useEffect} from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Header = () => {
   const dropdownRef = useRef(null);
@@ -6,22 +6,25 @@ const Header = () => {
 
   useEffect(() => {
     const pageClickEvent = (e) => {
-      if(dropdownRef.current !== null && !dropdownRef.current.contains(e.target)){
+      if (
+        dropdownRef.current !== null &&
+        !dropdownRef.current.contains(e.target) // this is to see if the click happened anywhere outside the dropdown menu
+      ) {
         setIsActive(!isActive);
       }
-    }
+    };
 
-    if(isActive){
-      window.addEventListener('click', pageClickEvent)
+    if (isActive) {
+      window.addEventListener("click", pageClickEvent);
     }
 
     return () => {
-      window.removeEventListener('click', pageClickEvent);
-    }
+      window.removeEventListener("click", pageClickEvent);
+    };
   }, [isActive]);
 
-  const onClick = (e) => {
-    setIsActive(!isActive)
+  const toggleMenuIcon = (e) => {
+    setIsActive(!isActive);
   };
 
   return (
@@ -59,8 +62,11 @@ const Header = () => {
         </div> */}
 
         <div className="menu-container">
-          <div onClick={onClick} className="menu-trigger"></div>
-          <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
+          <div onClick={toggleMenuIcon} className="menu-trigger"></div>
+          <nav
+            ref={dropdownRef}
+            className={`menu ${isActive ? "active" : "inactive"}`}
+          >
             <ul>
               <li>
                 <a href="#about">About</a>
@@ -73,7 +79,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="#contacts">Contacts</a>
-              </li>   
+              </li>
             </ul>
           </nav>
         </div>
